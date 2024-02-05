@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="anonymous">
+    <link rel="stylesheet" type="text/css" href="Jsbulbonoff.css">
+    <title>Bulb On/Off</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Press buttons to turn on/off light.</h1>
+        <div class="img-container">
+            <img src="bulboff.png" alt="Off bulb" id="bulboff">
+        </div>
+        <div class="buttons">
+            <button class="btn" type="button" onclick="bulbon()">On</button>
+            <button class="btn" type="button" onclick="bulboff()">Off</button>
+        </div>
+    </div>
+</body>
+<script>
+    function bulbon() {
+        document.getElementById('bulboff').src='bulbon.png';
+    }
+
+    function bulboff() {
+        document.getElementById('bulboff').src='bulboff.png';
+    }
+</script>
+</html>
